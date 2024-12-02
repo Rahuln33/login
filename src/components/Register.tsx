@@ -33,7 +33,7 @@ const Register = () => {
   const [notification, setNotification] = useState("");
 
   useEffect(() => {
-    const client = mqtt.connect("ws://192.168.0.104:6000"); // WebSocket URL
+    const client = mqtt.connect("ws://192.168.0.102:6000"); // WebSocket URL
 
     client.on("connect", () => {
       console.log("Connected to MQTT broker!");
